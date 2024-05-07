@@ -1,17 +1,18 @@
-import * as React from 'react'
+import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
-// import * as styles from '../styles/home.module.scss'
+import * as styles from '../styles/home.module.scss'
+import { HelloWorld } from 'components/HelloWorld'
 
-const IndexPage = () => (
-  <div className="{styles.container}">
-    <h1>olar pessoas</h1>
+const HomePage = () => (
+  <div className={styles.container}>
+    <HelloWorld />
     <StaticImage
       src="../images/print.png"
       alt="A dinosaur"
-      className="{styles.img}"
+      className={styles.img}
     />
   </div>
 )
 
-export default IndexPage
+export default HomePage
